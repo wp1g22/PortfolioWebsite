@@ -1,0 +1,37 @@
+.example-spacer {
+    flex: 1 1 auto;
+    z-index: 1;
+  }
+.toolbar{
+    color: #ADEFD1FF;
+    background-color: #00203FFF;
+    position: absolute;
+    z-index: 9;
+    border-color: white;
+    border-width: 100px;
+  }
+.arrow {
+  border: solid #ADEFD1FF;
+  border-width: 0 1vh 1vh 0;
+  display: inline-block;
+  padding: 3px;
+  rotate: 45deg;
+  width: 2vh;
+  height: 2vh;
+}
+.row{
+  z-index: 0;
+}
+.row:hover {
+  /* animation: bump 1.3s ease-in-out 0s; */
+  color: rgb(162, 0, 0);
+}
+@keyframes bump {
+  0% {
+      transform: scale(1);
+  }
+  100%{
+      transform: scale(1.5);
+  }
+}
+

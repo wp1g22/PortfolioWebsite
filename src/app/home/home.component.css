@@ -1,0 +1,57 @@
+.title {
+    font: "Lucida Console";
+    font-size: 19vw;
+    /* text-align: center; */
+    padding-top: 21vh;
+    padding-bottom:10vh;
+    color: #ADEFD1FF;
+    z-index: 10;
+    /* left:0; */
+  right:25vw;
+  text-align: center;
+  position: absolute;
+  /* width : 90%; */
+}
+.boxes {
+  overflow: hidden;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+.subtitle{
+  color: #ADEFD1FF;
+  padding-top: 45vh;
+  padding-bottom: 10vh;
+  font-size: 5vh;
+  line-height: 110%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  left:0;
+  right:0;
+  text-align: center;
+  position: absolute;
+  width : 90%;
+  z-index: 0;
+}
+.text{
+  color: #ADEFD1FF;
+  width: 70vw;
+  padding-bottom: 60vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-size: 4vh;
+  line-height: 110%;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateX(40%);
+  transition: all 2s ease-out;
+}
+
+.active {
+  opacity: 4;
+  transform: translateX(0);
+}

@@ -1,0 +1,32 @@
+<mat-toolbar class="toolbar">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleHome()" [@rotateAnimation]="hide ? 'open' : 'closed'"  aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
+          </button>
+          
+          
+          <span class="example-spacer"></span>
+          <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+          </button>
+          <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+          </button>
+    </mat-toolbar-row>
+    
+      <mat-toolbar-row *ngIf="hide" [@inOutAnimation] routerLink="home" class="row">
+        <button mat-icon-button   class="example-icon" aria-label="Example icon-button with home icon">
+            <mat-icon>home</mat-icon>
+          </button>
+          <h1>Home</h1>
+    </mat-toolbar-row>
+    <mat-toolbar-row *ngIf="hide" [@inOutAnimation] routerLink="experience" class="row">
+      <button mat-icon-button   class="example-icon" aria-label="Example icon-button with home icon">
+          <mat-icon>work</mat-icon>
+        </button>
+        <h1>Experience</h1>
+  </mat-toolbar-row>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+ 
+  
