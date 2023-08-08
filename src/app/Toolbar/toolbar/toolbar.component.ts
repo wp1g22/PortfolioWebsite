@@ -15,12 +15,33 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
   imports: [MatToolbarModule, MatButtonModule, MatIconModule, MatMenuModule, CommonModule, AppRoutingModule],
   animations: [
     trigger(
-      'inOutAnimation', 
+      'inOutAnimationHorizontal', 
       [
         transition(
           ':enter', 
           [
-            style({ height: 0, opacity: 0 }),
+            style({width: 0, opacity: 0 }),
+            animate('0.5s ease-out', 
+                    style({ width: 51, opacity: 1 }))
+          ]
+        ),
+        transition(
+          ':leave', 
+          [
+            style({ width: 51, opacity: 1 }),
+            animate('0.5s ease-in', 
+                    style({ width: 0, opacity: 0}))
+          ]
+        )
+      ]
+    ),
+    trigger(
+      'inOutAnimationVertical', 
+      [
+        transition(
+          ':enter', 
+          [
+            style({height: 0, opacity: 0 }),
             animate('0.5s ease-out', 
                     style({ height: 60, opacity: 1 }))
           ]

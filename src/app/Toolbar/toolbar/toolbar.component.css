@@ -34,4 +34,15 @@
       transform: scale(1.5);
   }
 }
+@media (any-pointer: coarse) {
+  .desktop{
+    display: none;
+  }
+}
+
+@media (any-pointer: fine) {
+  .mobile{
+    display: none;
+  }
+}
 
