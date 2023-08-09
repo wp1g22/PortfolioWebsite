@@ -1,62 +1,75 @@
 <mat-toolbar class="toolbar mobile">
     <mat-toolbar-row>
-        <button mat-icon-button (click)="toggleHome()" [@rotateAnimation]="hide ? 'open' : 'closed'"  aria-label="Example icon-button with menu icon">
-            <mat-icon>menu</mat-icon>
-          </button>
-          
-          
-          <span class="example-spacer"></span>
-          <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <div class="menu">
+            Menu:
+          </div>
+          <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
             <mat-icon>favorite</mat-icon>
           </button>
           <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
             <mat-icon>share</mat-icon>
+          </button> -->
+          <span class="example-spacer"></span>
+          <button mat-icon-button (click)="toggleHome()" [@rotateAnimation]="hide ? 'open' : 'closed'"  aria-label="Example icon-button with menu icon">
+            <mat-icon>menu</mat-icon>
           </button>
     </mat-toolbar-row>
-    
-      <mat-toolbar-row *ngIf="hide" [@inOutAnimationVertical] routerLink="home" class="row">
-        <button mat-icon-button   class="example-icon" aria-label="Example icon-button with home icon">
-            <mat-icon>home</mat-icon>
-          </button>
-          <h1>Home</h1>
+    <!--  *ngIf="hide" [@inOutAnimationVertical] -->
+    <mat-toolbar-row   routerLink="home" class="row">
+      <button mat-icon-button   aria-label="Example icon-button with home icon">
+          <mat-icon>home</mat-icon>
+      </button>
+     <h1>Home</h1>
     </mat-toolbar-row>
-    <mat-toolbar-row *ngIf="hide" [@inOutAnimationVertical] routerLink="experience" class="row">
-      <button mat-icon-button   class="example-icon" aria-label="Example icon-button with home icon">
+    <mat-toolbar-row routerLink="experience" class="row">
+      <button mat-icon-button    aria-label="Example icon-button with home icon">
           <mat-icon>work</mat-icon>
         </button>
         <h1>Experience</h1>
-  </mat-toolbar-row>
+    </mat-toolbar-row>
+    <mat-toolbar-row   routerLink="home" class="row">
+      <button mat-icon-button    aria-label="Example icon-button with home icon">
+          <mat-icon>school</mat-icon>
+      </button>
+     <h1>Education</h1>
+    </mat-toolbar-row>
+    <mat-toolbar-row   routerLink="home" class="row">
+      <button mat-icon-button    aria-label="Example icon-button with home icon">
+          <mat-icon>videogame_asset</mat-icon>
+      </button>
+     <h1>Hobbies</h1>
+    </mat-toolbar-row>
+    
   </mat-toolbar>
 
   <mat-toolbar class="toolbar desktop">
     <mat-toolbar-row>
-        <button mat-icon-button (click)="toggleHome()" [@rotateAnimation]="!hide ? 'open' : 'closed'"  aria-label="Example icon-button with menu icon">
+        <button mat-icon-button  (click)="toggleHome()" [@rotateAnimation]="!hide ? 'open' : 'closed'"  aria-label="Example icon-button with menu icon">
             <mat-icon>menu</mat-icon>
           </button>
-          <div *ngIf="!hide" [@inOutAnimationHorizontal]>
-            <button mat-icon-button  class="example-icon" aria-label="Example icon-button with home icon">
-              <mat-icon>home</mat-icon>
-            </button>
-            
-          </div>
-          <h1 *ngIf="!hide" [@inOutAnimationHorizontal]>Home</h1>
-          
 
-          <div *ngIf="!hide" [@inOutAnimationHorizontal]>
-            <button mat-icon-button   class="example-icon" aria-label="Example icon-button with home icon">
-              <mat-icon>work</mat-icon>
-            </button>
-            
-          </div>
-          <h1 *ngIf="!hide" [@inOutAnimationHorizontal]>Experience</h1>
+          <mat-icon routerLink="home" (mouseenter) ="hover(1)" (mouseleave) ="hover(1)" class="example-icon activeIcon o1">home</mat-icon>
+          <h1 class="example-text-small activeTextSmall o1"  routerLink="home" (mouseenter)="hover(1)" (mouseleave) ="hover(1)">Home</h1>
+
+          <mat-icon routerLink="experience" (mouseenter) ="hover(2)" (mouseleave) ="hover(2)" class="example-icon activeIcon o2">work</mat-icon>
+          <h1 class="example-text activeText o2" routerLink="experience" (mouseenter) ="hover(2)" (mouseleave) ="hover(2)">Experience</h1>
+
+          <mat-icon routerLink="home" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)" class="example-icon activeIcon o3">school</mat-icon>
+          <h1 class="example-text activeText o3" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)">Education</h1>
+
+          <mat-icon routerLink="home" (mouseenter) ="hover(4)" (mouseleave) ="hover(4)" class="example-icon activeIcon o4">videogame_asset</mat-icon>
+          <h1 class="example-text activeText o4" (mouseenter) ="hover(4)" (mouseleave) ="hover(4)">Hobbies</h1>
           
           <span class="example-spacer"></span>
-          <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+
+          <button mat-icon-button class="favorite-icon" aria-label="Example icon-button with heart icon">
             <mat-icon>favorite</mat-icon>
           </button>
-          <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+
+          <button mat-icon-button class="" aria-label="Example icon-button with share icon">
             <mat-icon>share</mat-icon>
           </button>
+
     </mat-toolbar-row>
   </mat-toolbar>
 

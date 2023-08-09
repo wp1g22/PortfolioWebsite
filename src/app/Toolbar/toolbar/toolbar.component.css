@@ -10,31 +10,96 @@
     border-color: white;
     border-width: 100px;
   }
-.arrow {
-  border: solid #ADEFD1FF;
-  border-width: 0 1vh 1vh 0;
+  .menu {
+    opacity: 0; 
+    transform: translateX(-200%);
+    transition: opacity 1s ease-out,  height 1s ease-in-out, transform 1s ease-in-out;
+  }
+.row {
+  transition: opacity 0.55s ease-out,  height 0.55s;
+  height: 0;
+  opacity: 0;
+}
+
+.example-disabled {
   display: inline-block;
-  padding: 3px;
-  rotate: 45deg;
-  width: 2vh;
-  height: 2vh;
 }
-.row{
-  z-index: 0;
+
+.activeRow{
+  height: 7vh;
+  opacity: 1;
 }
-.row:hover {
+.nonActiveRow{
+  height: 0vh;
+  opacity: 0;
+}
+.example-icon {
+  opacity: 0;
+  width: 0;
+  transition: opacity 0.5s ease-out,  width 0.5s;
+}
+.example-text {
+  opacity: 0;
+  width: 0;
+  transition: opacity 0.5s ease-out,  width 0.5s;
+}
+.example-text-small {
+  opacity: 0;
+  width: 0;
+  transition: opacity 0.5s ease-out,  width 0.5s;
+}
+
+.activeMenu{
+  width: 9vw;
+  opacity: 1;
+  transform: translateX(0);
+  transition-delay: 0.1s;
+}
+
+.o1{
+
+}
+.o2{
+
+}
+.o3{
+
+}
+.o4{
+
+}
+.oHover{
+  color: red;
+}
+.activeIcon{
+  width:3vw;
+  opacity: 1;
+}
+.activeText {
+  width: 12vw;
+  opacity: 1;
+}
+.activeTextSmall {
+  width: 7vw;
+  opacity: 1;
+}
+.link:hover {
   /* animation: bump 1.3s ease-in-out 0s; */
   color: rgb(162, 0, 0);
+  /* background-color: red; */
 }
-@keyframes bump {
-  0% {
-      transform: scale(1);
-  }
-  100%{
-      transform: scale(1.5);
+@media (max-width: 800px) {
+  .desktop{
+    display: none;
   }
 }
-@media (any-pointer: coarse) {
+
+@media (min-width: 800px) {
+  .mobile{
+    display: none;
+  }
+}
+/* @media (any-pointer: coarse) {
   .desktop{
     display: none;
   }
@@ -44,5 +109,5 @@
   .mobile{
     display: none;
   }
-}
+} */
 
