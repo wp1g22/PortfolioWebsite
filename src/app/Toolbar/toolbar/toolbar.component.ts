@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { style, transition, trigger, animate, state } from '@angular/animations';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -46,6 +47,9 @@ export class ToolbarComponent implements OnInit{
 ngOnInit(): void {
   
 }
+constructor(private route : Router){
+  
+}
 hide = false;
 hover(num : number) {
   // console.log('hover + o' + num)
@@ -58,14 +62,14 @@ hover(num : number) {
     }
   });
 }
-switch(num : number){
+switch(){
   const elements = document.querySelectorAll('.example-icon');
   const elements2 = document.querySelectorAll('.row');
   const elements4 = document.querySelectorAll('.example-text');
   const elements5 = document.querySelectorAll('.example-text-small');
-
+  const location : string = this.route.url.replace('/','');
   elements.forEach((element) => {
-    if(element.classList.contains("o" + num)){
+    if(element.classList.contains(location)){
       element.classList.add('selected')
     }
     else{
@@ -73,7 +77,8 @@ switch(num : number){
     }
   });
   elements2.forEach((element) => {
-    if(element.classList.contains("o" + num)){
+    console.log(element.tagName)
+    if(element.classList.contains(location)){
       element.classList.add('selected')
     }
     else{
@@ -81,7 +86,7 @@ switch(num : number){
     }
   });
   elements4.forEach((element) => {
-    if(element.classList.contains("o" + num)){
+    if(element.classList.contains(location)){
       element.classList.add('selected')
     }
     else{
@@ -89,7 +94,7 @@ switch(num : number){
     }
   });
   elements5.forEach((element) => {
-    if(element.classList.contains("o" + num)){
+    if(element.classList.contains(location)){
       element.classList.add('selected')
     }
     else{

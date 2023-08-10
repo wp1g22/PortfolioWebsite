@@ -28,6 +28,7 @@
   /* border-bottom: white; */
   color: rgb(169, 142, 35);
   font-weight: bold;
+  font-size: 115%;
 }
 .example-disabled {
   display: inline-block;
@@ -64,7 +65,7 @@
   transition-delay: 0.1s;
 }
 
-.o1{
+/* .o1{
 
 }
 .o2{
@@ -78,9 +79,10 @@
 }
 .o5{
   
-}
+} */
 .oHover{
-  color: red;
+  /* color: red; */
+  color: rgb(169, 142, 35);
 }
 .activeIcon{
   width:3vw;

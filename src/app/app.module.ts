@@ -9,6 +9,7 @@ import { CommonModule } from '@angular/common';
 import { ScrollArrowComponent } from './scrollArrow/scroll-arrow/scroll-arrow.component';
 import { HomeComponent } from './home/home.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ExperienceComponent } from './experience/experience.component';
     AppComponent,
     HomeComponent,
     ExperienceComponent,
+    EducationComponent,
     
   ],
   imports: [

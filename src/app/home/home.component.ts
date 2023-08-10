@@ -41,6 +41,7 @@ export class HomeComponent {
           entry.target.classList.add('active');
         }else{
           entry.target.classList.remove('active');
+          entry.target.classList.remove('delay')
         }
       });
     }, options);
