@@ -29,7 +29,7 @@
         <h1>Experience</h1>
     </mat-toolbar-row>
 
-    <mat-toolbar-row name="education" (click)="toggleHome();" routerLink="home" class="education row o3">
+    <mat-toolbar-row name="education" (click)="toggleHome();" routerLink="education" class="education row o3">
       <button mat-icon-button>
           <mat-icon>school</mat-icon>
       </button>
@@ -37,11 +37,11 @@
     </mat-toolbar-row>
 
 
-    <mat-toolbar-row name="hobbies" (click)="toggleHome();" routerLink="home" class="hobbies row o4">
+    <mat-toolbar-row name="hobbies" (click)="toggleHome();" routerLink="hobbies" class="hobbies row o4">
       <button mat-icon-button>
           <mat-icon>videogame_asset</mat-icon>
       </button>
-     <h1 routerLink="home">Hobbies</h1>
+     <h1 >Hobbies</h1>
     </mat-toolbar-row>
 
     <mat-toolbar-row name="projects" (click)="toggleHome();  "  routerLink="projects" class="projects row o5">
@@ -65,11 +65,11 @@
           <mat-icon name="experience" routerLink="experience"   (mouseenter) ="hover(2)" (mouseleave) ="hover(2)" class="experience example-icon activeIcon o2">work</mat-icon>
           <h1 name="experience" class="experience example-text activeText o2 "   routerLink="experience" (mouseenter) ="hover(2)" (mouseleave) ="hover(2)">Experience</h1>
 
-          <mat-icon name="education" routerLink="home" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)" class="education example-icon activeIcon o3">school</mat-icon>
-          <h1 routerLink="education" routerLink="home"  class="education example-text activeText o3" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)">Education</h1>
+          <mat-icon name="education" routerLink="education" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)" class="education example-icon activeIcon o3">school</mat-icon>
+          <h1 routerLink="education" class="education example-text activeText o3" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)">Education</h1>
 
-          <mat-icon name="hobbies" routerLink="home"   (mouseenter) ="hover(4)" (mouseleave) ="hover(4)" class="hobbies example-icon activeIcon o4">videogame_asset</mat-icon>
-          <h1 name="hobbies" routerLink="home"   class="hobbies example-text activeText o4" (mouseenter) ="hover(4)" (mouseleave) ="hover(4)">Hobbies</h1>
+          <mat-icon name="hobbies" routerLink="hobbies"   (mouseenter) ="hover(4)" (mouseleave) ="hover(4)" class="hobbies example-icon activeIcon o4">videogame_asset</mat-icon>
+          <h1 name="hobbies" routerLink="hobbies"   class="hobbies example-text activeText o4" (mouseenter) ="hover(4)" (mouseleave) ="hover(4)">Hobbies</h1>
 
           <mat-icon name="projects" routerLink="projects"   (mouseenter) ="hover(5)" (mouseleave) ="hover(5)" class="projects example-icon activeIcon o5">code</mat-icon>
           <h1 name="projects" routerLink="projects"   class="projects example-text activeText o5" (mouseenter) ="hover(5)" (mouseleave) ="hover(5)">Projects</h1>

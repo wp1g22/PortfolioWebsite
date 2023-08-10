@@ -10,6 +10,7 @@ import { ScrollArrowComponent } from './scrollArrow/scroll-arrow/scroll-arrow.co
 import { HomeComponent } from './home/home.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { EducationComponent } from './education/education.component';
     HomeComponent,
     ExperienceComponent,
     EducationComponent,
+    HobbiesComponent,
     
   ],
   imports: [
