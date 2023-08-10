@@ -1,5 +1,5 @@
 <mat-toolbar class="toolbar mobile">
-    <mat-toolbar-row>
+    <mat-toolbar-row style="z-index: 10;">
           <div class="menu">
             Menu:
           </div>
@@ -10,34 +10,44 @@
             <mat-icon>share</mat-icon>
           </button> -->
           <span class="example-spacer"></span>
-          <button mat-icon-button (click)="toggleHome()" [@rotateAnimation]="hide ? 'open' : 'closed'"  aria-label="Example icon-button with menu icon">
+          <button mat-icon-button (click)="toggleHome()" [@rotateAnimation]="hide ? 'open' : 'closed'">
             <mat-icon>menu</mat-icon>
           </button>
     </mat-toolbar-row>
     <!--  *ngIf="hide" [@inOutAnimationVertical] -->
-    <mat-toolbar-row   routerLink="home" class="row">
-      <button mat-icon-button   aria-label="Example icon-button with home icon">
+    <mat-toolbar-row   (click)="toggleHome(); switch(1);" routerLink="home" class="row o1 selected">
+      <button mat-icon-button>
           <mat-icon>home</mat-icon>
       </button>
      <h1>Home</h1>
     </mat-toolbar-row>
-    <mat-toolbar-row routerLink="experience" class="row">
-      <button mat-icon-button    aria-label="Example icon-button with home icon">
+
+    <mat-toolbar-row (click)="toggleHome(); switch(2);" routerLink="experience" class="row o2">
+      <button mat-icon-button>
           <mat-icon>work</mat-icon>
         </button>
         <h1>Experience</h1>
     </mat-toolbar-row>
-    <mat-toolbar-row   routerLink="home" class="row">
-      <button mat-icon-button    aria-label="Example icon-button with home icon">
+
+    <mat-toolbar-row  (click)="toggleHome(); switch(3)" routerLink="home" class="row o3">
+      <button mat-icon-button>
           <mat-icon>school</mat-icon>
       </button>
      <h1>Education</h1>
     </mat-toolbar-row>
-    <mat-toolbar-row   routerLink="home" class="row">
-      <button mat-icon-button    aria-label="Example icon-button with home icon">
+
+    <mat-toolbar-row  (click)="toggleHome(); switch(4)" routerLink="home" class="row o4">
+      <button mat-icon-button>
           <mat-icon>videogame_asset</mat-icon>
       </button>
      <h1>Hobbies</h1>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row (click)="toggleHome(); switch(5)"  routerLink="projects" class="row o5">
+      <button mat-icon-button>
+          <mat-icon>code</mat-icon>
+      </button>
+     <h1>Projects</h1>
     </mat-toolbar-row>
     
   </mat-toolbar>
@@ -48,17 +58,20 @@
             <mat-icon>menu</mat-icon>
           </button>
 
-          <mat-icon routerLink="home" (mouseenter) ="hover(1)" (mouseleave) ="hover(1)" class="example-icon activeIcon o1">home</mat-icon>
-          <h1 class="example-text-small activeTextSmall o1"  routerLink="home" (mouseenter)="hover(1)" (mouseleave) ="hover(1)">Home</h1>
+          <mat-icon routerLink="home" (click)="switch(1)" (mouseenter) ="hover(1)" (mouseleave) ="hover(1)" class="example-icon activeIcon o1 selected">home</mat-icon>
+          <h1 class="example-text-small activeTextSmall o1 selected" (click)="switch(1)" routerLink="home" (mouseenter)="hover(1)" (mouseleave) ="hover(1)">Home</h1>
 
-          <mat-icon routerLink="experience" (mouseenter) ="hover(2)" (mouseleave) ="hover(2)" class="example-icon activeIcon o2">work</mat-icon>
-          <h1 class="example-text activeText o2" routerLink="experience" (mouseenter) ="hover(2)" (mouseleave) ="hover(2)">Experience</h1>
+          <mat-icon routerLink="experience" (click)="switch(2)" (mouseenter) ="hover(2)" (mouseleave) ="hover(2)" class="example-icon activeIcon o2">work</mat-icon>
+          <h1 class="example-text activeText o2 " (click)="switch(2)" routerLink="experience" (mouseenter) ="hover(2)" (mouseleave) ="hover(2)">Experience</h1>
 
-          <mat-icon routerLink="home" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)" class="example-icon activeIcon o3">school</mat-icon>
-          <h1 class="example-text activeText o3" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)">Education</h1>
+          <mat-icon routerLink="home" (click)="switch(3)" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)" class="example-icon activeIcon o3">school</mat-icon>
+          <h1 routerLink="home"(click)="switch(3)"  class="example-text activeText o3" (mouseenter) ="hover(3)" (mouseleave) ="hover(3)">Education</h1>
 
-          <mat-icon routerLink="home" (mouseenter) ="hover(4)" (mouseleave) ="hover(4)" class="example-icon activeIcon o4">videogame_asset</mat-icon>
-          <h1 class="example-text activeText o4" (mouseenter) ="hover(4)" (mouseleave) ="hover(4)">Hobbies</h1>
+          <mat-icon routerLink="home" (click)="switch(4)" (mouseenter) ="hover(4)" (mouseleave) ="hover(4)" class="example-icon activeIcon o4">videogame_asset</mat-icon>
+          <h1 routerLink="home" (click)="switch(4)" class="example-text activeText o4" (mouseenter) ="hover(4)" (mouseleave) ="hover(4)">Hobbies</h1>
+
+          <mat-icon routerLink="projects" (click)="switch(5)" (mouseenter) ="hover(5)" (mouseleave) ="hover(5)" class="example-icon activeIcon o5">code</mat-icon>
+          <h1 routerLink="projects" (click)="switch(5)" class="example-text activeText o5" (mouseenter) ="hover(5)" (mouseleave) ="hover(5)">Projects</h1>
           
           <span class="example-spacer"></span>
 
@@ -73,6 +86,6 @@
     </mat-toolbar-row>
   </mat-toolbar>
 
-  <router-outlet></router-outlet>
+  <router-outlet style="z-index: 0;"></router-outlet>
  
   

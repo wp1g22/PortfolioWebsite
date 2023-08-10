@@ -1,25 +1,25 @@
 
-@media (any-pointer: coarse) {
+@media (max-width: 800px) {
     .flex-container{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        padding-top: 30vh;
+        padding-top: 70vh;
         height: 14vh;    
-        padding-bottom: 30vh;
+        padding-bottom: 40vh;
     }
 }
 
-@media (any-pointer: fine) {
+@media (min-width: 800px) {
     .flex-container{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        padding-top: 40vh;
+        padding-top: 35vh;
         height: 14vh;    
-        padding-bottom: 20vh;
+        padding-bottom: 30vh;
     }
  }
 

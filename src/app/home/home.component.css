@@ -11,19 +11,77 @@
   
 } */
 
-.title {
-    font: "Lucida Console";
-    font-size: 19vw;
-    /* text-align: center; */
-    padding-top: 30vh;
-    padding-bottom:10vh;
-    color: #ADEFD1FF;
-    /* z-index: 10; */
-    /* left:0; */
-  /* right:25vw; */
-  text-align: center;
-  /* width : 90%; */
-}
+@media (max-width: 800px) {
+    .title {
+        font: "Lucida Console";
+        font-size: 13vh;
+        /* text-align: center; */
+        padding-top: 17vh;
+        padding-bottom:0vh;
+        color: #ADEFD1FF;
+        line-height: 105%;
+        /* z-index: 10; */
+        /* left:0; */
+         /* right:25vw; */
+         left:2vw;
+         right:0;
+         text-align: center;
+         position: absolute;
+         width : 96%;
+         /* z-index: 0; */
+        /* width : 90%; */
+    }
+    .subtitle{
+        color: #ADEFD1FF;
+        padding-top: 50vh;
+        padding-bottom: 10vh;
+        font-size: 7vw;
+        line-height: 110%;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        left:2vw;
+         right:0;
+         text-align: center;
+         position: absolute;
+         width : 96%;
+         overflow: hidden;
+        /* z-index: 0; */
+      }
+  }
+  
+  @media (min-width: 800px) {
+    .title {
+        font: "Lucida Console";
+        font-size: 14vw;
+        /* text-align: center; */
+        padding-top: 30vh;
+        padding-bottom:10vh;
+        color: #ADEFD1FF;
+        /* z-index: 10; */
+        /* left:0; */
+      /* right:25vw; */
+      text-align: center;
+      /* width : 90%; */
+    }
+    .subtitle{
+        color: #ADEFD1FF;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        font-size: 3vw;
+        line-height: 110%;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        left:16vw;
+        right:0;
+        text-align: center;
+        position: absolute;
+        width : 60%;
+        z-index: 0;
+        overflow: hidden;
+      }
+  }
+
+
 .boxes {
   overflow: hidden;
 }
@@ -32,22 +90,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
   }
-.subtitle{
-  color: #ADEFD1FF;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
-  font-size: 5vh;
-  line-height: 110%;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  left:0;
-  right:0;
-  text-align: center;
-  position: absolute;
-  width : 90%;
-  z-index: 0;
-}
+
 .text{
   color: #ADEFD1FF;
   width: 70vw;
@@ -59,11 +104,15 @@
 }
 .fade-in {
   opacity: 0;
-  transform: translateX(40%);
-  transition: all 2s ease-out;
+  transform: translateY(20%);
+  transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+  overflow: hidden;
+}
+.delay{
+  transition-delay:1.7s;
 }
 
 .active {
   opacity: 4;
-  transform: translateX(0);
+  transform: translateY(0);
 }

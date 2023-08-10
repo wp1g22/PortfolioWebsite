@@ -58,7 +58,47 @@ hover(num : number) {
     }
   });
 }
-toggleHome() {
+switch(num : number){
+  const elements = document.querySelectorAll('.example-icon');
+  const elements2 = document.querySelectorAll('.row');
+  const elements4 = document.querySelectorAll('.example-text');
+  const elements5 = document.querySelectorAll('.example-text-small');
+
+  elements.forEach((element) => {
+    if(element.classList.contains("o" + num)){
+      element.classList.add('selected')
+    }
+    else{
+      element.classList.remove('selected')
+    }
+  });
+  elements2.forEach((element) => {
+    if(element.classList.contains("o" + num)){
+      element.classList.add('selected')
+    }
+    else{
+      element.classList.remove('selected')
+    }
+  });
+  elements4.forEach((element) => {
+    if(element.classList.contains("o" + num)){
+      element.classList.add('selected')
+    }
+    else{
+      element.classList.remove('selected')
+    }
+  });
+  elements5.forEach((element) => {
+    if(element.classList.contains("o" + num)){
+      element.classList.add('selected')
+    }
+    else{
+      element.classList.remove('selected')
+    }
+  })
+}
+toggleHome(num ?: number) {
+  
   const elements = document.querySelectorAll('.example-icon');
   const elements2 = document.querySelectorAll('.row');
   const elements3 = document.querySelectorAll('.menu');
@@ -66,6 +106,15 @@ toggleHome() {
   const elements5 = document.querySelectorAll('.example-text-small');
 
   elements3.forEach((element) => {
+    if(num != undefined){
+      if(element.classList.contains("o" + num)){
+        element.classList.add('selected')
+      }
+      else{
+        element.classList.remove('selected')
+      }
+      // getComputedStyle(element).
+    }
     if(element.classList.contains('activeMenu')){
       element.classList.remove('activeMenu');
     }else{
@@ -74,6 +123,14 @@ toggleHome() {
   });
 
   elements.forEach((element) => {
+    if(num != undefined){
+      if(element.classList.contains("o" + num)){
+        element.classList.add('selected')
+      }
+      else{
+        element.classList.remove('selected')
+      }
+    }
     if(element.classList.contains('activeIcon')){
       element.classList.remove('activeIcon');
     }else{
@@ -82,6 +139,14 @@ toggleHome() {
   });
 
   elements4.forEach((element) => {
+    if(num != undefined){
+      if(element.classList.contains("o" + num)){
+        element.classList.add('selected')
+      }
+      else{
+        element.classList.remove('selected')
+      }
+    }
     if(element.classList.contains('activeText')){
       element.classList.remove('activeText');
     }else{
@@ -90,6 +155,14 @@ toggleHome() {
   });
 
   elements5.forEach((element) => {
+    if(num != undefined){
+      if(element.classList.contains("o" + num)){
+        element.classList.add('selected')
+      }
+      else{
+        element.classList.remove('selected')
+      }
+    }
     if(element.classList.contains('activeTextSmall')){
       element.classList.remove('activeTextSmall');
     }else{
@@ -98,6 +171,14 @@ toggleHome() {
   });
 
   elements2.forEach((element) => {
+    if(num != undefined){
+      if(element.classList.contains("o" + num)){
+        element.classList.add('selected')
+      }
+      else{
+        element.classList.remove('selected')
+      }
+    }
     if(element.classList.contains('activeRow')){
       element.classList.remove('activeRow');
       element.classList.add('nonActiveRow');

@@ -14,7 +14,7 @@ export class HomeComponent {
 
   ngOnInit() {
     this.createObserver();
-    this.typeWriter('Welcome to my portfolio website!', 0, 100);
+    this.typeWriter('William Payne', 0, 120);
   }
 
   async typeWriter(txt: string, i: number, speed: number) {

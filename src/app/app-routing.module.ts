@@ -8,6 +8,7 @@ const routes: Routes = [
   {path : 'home', component: HomeComponent},
   {path : 'experience', component: ExperienceComponent},
   {path: '', redirectTo :'home', pathMatch: 'full'},
+  { path: 'projects', loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule) },
 ];
 
 @NgModule({
