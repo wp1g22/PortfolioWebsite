@@ -30,6 +30,7 @@
          width : 96%;
          /* z-index: 0; */
         /* width : 90%; */
+
     }
     .subtitle{
         color: #ADEFD1FF;
@@ -46,6 +47,10 @@
          width : 96%;
          overflow: hidden;
         /* z-index: 0; */
+      }
+      .scroll-arrow{
+        padding-top: 70vh;
+        padding-bottom: 40vh;
       }
   }
   
@@ -78,6 +83,10 @@
         width : 60%;
         z-index: 0;
         overflow: hidden;
+      }
+      .scroll-arrow{
+        padding-top: 35vh;
+        padding-bottom: 30vh;
       }
   }
 

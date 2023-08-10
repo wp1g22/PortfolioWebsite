@@ -34,16 +34,23 @@
         color: #ADEFD1FF;
         font-size: 4vw;
         line-height: 110%;
-        text-align: center;
+        text-align: left;
+        padding-left: 12vw;
+        padding-right: 5vw;
     }
     .flex-container{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 10vh;
+        padding-top: 5vh;
         padding-bottom: 15vh;
         /* justify-content: center; */
-        gap: 30vh;
+        gap: 5vh;
+        overflow: hidden;
+    }
+    .scroll{
+        overflow: hidden;
+        padding-bottom: 2vh;
     }
 }
 
@@ -87,7 +94,10 @@
         /* align-items: center; */
         justify-content: center;
         gap: 20vw;
-
+        overflow: hidden;
+    }
+    .scroll{
+        display:none;
     }
  }
  .fade-in {

@@ -77,7 +77,7 @@ switch(){
     }
   });
   elements2.forEach((element) => {
-    console.log(element.tagName)
+    // console.log(element.tagName)
     if(element.classList.contains(location)){
       element.classList.add('selected')
     }
