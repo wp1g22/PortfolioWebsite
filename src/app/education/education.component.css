@@ -90,3 +90,17 @@
 
     }
  }
+ .fade-in {
+    opacity: 0;
+    transform: translateY(20%);
+    transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+    overflow: hidden;
+  }
+  .delay{
+    transition-delay:1.5s;
+  }
+  
+  .active {
+    opacity: 4;
+    transform: translateY(0);
+  }
