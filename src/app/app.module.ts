@@ -11,7 +11,8 @@ import { HomeComponent } from './home/home.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
-
+import { ContactComponent } from './contact/contact.component';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     ExperienceComponent,
     EducationComponent,
     HobbiesComponent,
+    ContactComponent,
     
   ],
   imports: [
@@ -28,7 +30,8 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     BrowserAnimationsModule,
     ToolbarComponent,
     CommonModule,
-    ScrollArrowComponent
+    ScrollArrowComponent,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

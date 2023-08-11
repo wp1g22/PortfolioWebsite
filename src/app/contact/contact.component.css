@@ -1,14 +1,85 @@
-.title {
-    font: "Lucida Console";
-    font-size: 13vh;
-    /* text-align: center; */
-    padding-top: 20vh;
-    padding-bottom:0vh;
-    color: #ADEFD1FF;
-    line-height: 105%;
-    /* z-index: 10; */
-    /* left:0; */
-  /* right:25vw; */
-  text-align: center;
-    /* width : 90%; */
+@media (max-width: 800px) {
+    .title {
+        font: "Lucida Console";
+        font-size: 20vw;
+        /* text-align: center; */
+        padding-top: 10vh;
+        padding-bottom:0vh;
+        color: #ADEFD1FF;
+        line-height: 105%;
+        /* z-index: 10; */
+        /* left:0; */
+      /* right:25vw; */
+      text-align: center;
+        /* width : 90%; */
+    }
+    .text{
+        color: #ADEFD1FF;
+        font-size: 2vh;
+        line-height: 110%;
+    }
 }
+
+@media (min-width: 800px) {
+    .title {
+        font: "Lucida Console";
+        font-size: 20vh;
+        /* text-align: center; */
+        padding-top: 10vh;
+        padding-bottom:0vh;
+        color: #ADEFD1FF;
+        line-height: 105%;
+        /* z-index: 10; */
+        /* left:0; */
+      /* right:25vw; */
+      text-align: center;
+        /* width : 90%; */
+    }
+    .text{
+        color: #ADEFD1FF;
+        font-size: 2vw;
+        line-height: 110%;
+    }
+ }
+
+
+/* unvisited link */
+a:link {
+    color: #ADEFD1FF;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #ADEFD1FF;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #ADEFD1FF;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #ADEFD1FF;
+  }
+  .table{
+    border-spacing: 1vh; 
+    padding-top: 5vh; 
+    padding-bottom: 5VH;
+    margin-left: auto;
+  margin-right: auto;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30%);
+    transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+    overflow: hidden;
+  }
+  .delay{
+    transition-delay:1.5s;
+  }
+  
+  .active {
+    opacity: 4;
+    transform: translateY(0);
+  }

@@ -6,8 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent implements OnInit{
+  message : string = "";
   ngOnInit(): void {
     this.createObserver();
+    this.typeWriter('Education', 110);
+  }
+  async typeWriter(txt: string, speed: number) {
+    var i : number = 0;
+    this.message="";
+    while (i < txt.length) {
+      this.message += txt[i];
+      i++;
+      await new Promise(resolve => setTimeout(resolve, speed));
+    }
   }
 
   private createObserver() {
@@ -19,6 +30,7 @@ export class EducationComponent implements OnInit{
     const isIntersecting = (entry: IntersectionObserverEntry) =>
       entry.isIntersecting || entry.intersectionRatio > 0;
 
+    
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (isIntersecting(entry)) {
