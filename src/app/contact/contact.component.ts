@@ -9,7 +9,7 @@ export class ContactComponent implements OnInit{
   message : string = "x";
   ngOnInit(): void {
     this.createObserver();
-    this.typeWriter('Contact', 110);
+    this.typeWriter('Contact', 130);
   }
   async typeWriter(txt: string, speed: number) {
     var i : number = 0;
