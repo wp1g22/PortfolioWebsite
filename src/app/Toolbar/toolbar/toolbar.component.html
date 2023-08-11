@@ -50,6 +50,13 @@
       </button>
      <h1>Projects</h1>
     </mat-toolbar-row>
+
+    <mat-toolbar-row name="contact" (click)="toggleHome();  "  routerLink="contact" class="contact row o5">
+      <button mat-icon-button>
+          <mat-icon>email</mat-icon>
+      </button>
+     <h1>Contact</h1>
+    </mat-toolbar-row>
     
   </mat-toolbar>
 
@@ -74,6 +81,9 @@
           <mat-icon name="projects" routerLink="projects"   (mouseenter) ="hover(5)" (mouseleave) ="hover(5)" class="projects example-icon activeIcon o5">code</mat-icon>
           <h1 name="projects" routerLink="projects"   class="projects example-text activeText o5" (mouseenter) ="hover(5)" (mouseleave) ="hover(5)">Projects</h1>
           
+          <mat-icon name="contact" routerLink="contact"   (mouseenter) ="hover(6)" (mouseleave) ="hover(6)" class="contact example-icon activeIcon o6">email</mat-icon>
+          <h1 name="contact" routerLink="contact"   class="contact example-text activeText o6" (mouseenter) ="hover(6)" (mouseleave) ="hover(6)">Contact</h1>
+          
           <span class="example-spacer"></span>
 
           <button mat-icon-button class="favorite-icon" aria-label="Example icon-button with heart icon">
@@ -87,6 +97,14 @@
     </mat-toolbar-row>
   </mat-toolbar>
 
-  <router-outlet style="z-index: 0;" (activate)="switch()"></router-outlet>
+<router-outlet style="z-index: 0; " (activate)="switch()"></router-outlet>
+
+<footer style="position: relative; bottom: 0; z-index: 0; ">
+  <div style="display: flex; flex-direction: column; width:100%; height: 80%;
+   left:0; position: absolute; bottom: 0; align-items: center; color: #ADEFD1FF; background-color: #00203FFF;">
+    <h1 style="align-self: center; height: 80%;  font-size: 2vh;">Designed, developed and maintained by William</h1>
+  </div>
+</footer>
+  
  
   

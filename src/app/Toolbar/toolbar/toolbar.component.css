@@ -5,7 +5,7 @@
 .toolbar{
     color: #ADEFD1FF;
     background-color: #00203FFF;
-    position: absolute;
+    position: fixed;
     z-index: 11;
   }
   .menu {
