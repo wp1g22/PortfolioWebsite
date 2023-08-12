@@ -36,7 +36,17 @@
         line-height: 110%;
         text-align: left;
         padding-left: 12vw;
-        padding-right: 5vw;
+        /* padding-bottom: 0.25vh; */
+        /* padding-right: 5vw; */
+    }
+    .text2{
+        color: #ADEFD1FF;
+        font-size: 4vw;
+        line-height: 110%;
+        text-align: left;
+        padding-left: 12vw;
+        padding-bottom: 1vh;
+        /* padding-right: 5vw; */
     }
     .flex-container{
         display: flex;
@@ -87,6 +97,15 @@
         color: #ADEFD1FF;
         font-size: 1vw;
         line-height: 110%;
+        padding-bottom: 1vh;
+        padding-right: 7vw;
+    }
+    .text2{
+        color: #ADEFD1FF;
+        font-size: 1vw;
+        line-height: 110%;
+        padding-bottom: 2vh;
+        padding-right: 7vw;
     }
     .flex-container{
         display: flex;
