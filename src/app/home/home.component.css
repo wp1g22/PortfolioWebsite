@@ -52,6 +52,12 @@
         padding-top: 70vh;
         padding-bottom: 40vh;
       }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(9%);
+        transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+        overflow: hidden;
+      }
   }
   
   @media (min-width: 800px) {
@@ -88,6 +94,12 @@
         padding-top: 35vh;
         padding-bottom: 30vh;
       }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(15%);
+        transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+        overflow: hidden;
+      }
   }
 
 
@@ -111,12 +123,7 @@
   font-size: 4vh;
   line-height: 110%;
 }
-.fade-in {
-  opacity: 0;
-  transform: translateY(15%);
-  transition: opacity 1.7s ease-out, transform 1.7s ease-out;
-  overflow: hidden;
-}
+
 .delay{
   transition-delay:1.5s;
 }
