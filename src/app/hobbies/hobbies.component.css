@@ -54,6 +54,9 @@
         padding-top: 6vh;
         padding-bottom: 22vh;
     }
+    .hobby{
+        padding-bottom: 35vh;
+    }
 }
 
 @media (min-width: 800px) {
@@ -99,7 +102,7 @@
         flex-direction: row;
         /* align-items: center; */
         justify-content: center;
-        padding-bottom: 5vh;
+        padding-bottom: 21vh;
         gap: 7vw;
         padding-left: 0vw;
         /* overflow: hidden; */
