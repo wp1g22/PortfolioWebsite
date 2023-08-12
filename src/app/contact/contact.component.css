@@ -17,6 +17,8 @@
         color: #ADEFD1FF;
         padding-top: 15vh;
         padding-bottom: 10vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
         font-size: 8vw;
         line-height: 110%;
         text-align: center;
@@ -38,9 +40,9 @@
 @media (min-width: 800px) {
     .title {
         font: "Lucida Console";
-        font-size: 20vh;
+        font-size: 18vh;
         /* text-align: center; */
-        padding-top: 10vh;
+        padding-top: 14vh;
         padding-bottom:0vh;
         color: #ADEFD1FF;
         line-height: 105%;
@@ -54,7 +56,9 @@
         color: #ADEFD1FF;
         padding-top: 10vh;
         padding-bottom: 9vh;
-        font-size: 7vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 6vh;
         line-height: 110%;
         text-align: center;
     }
