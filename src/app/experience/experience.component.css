@@ -96,6 +96,7 @@
         justify-content: center;
         gap: 10vw;
         overflow: hidden;
+        padding-bottom: 10vh;
     }
     .scroll{
         display:none;
