@@ -6,6 +6,7 @@ import {LocationStrategy, HashLocationStrategy} from '@angular/common';
 import { EducationComponent } from './education/education.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { ContactComponent } from './contact/contact.component';
+import { RecruitersComponent } from './recruiters/recruiters.component';
 
 const routes: Routes = [
   {path : 'home', component: HomeComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path : 'education', component: EducationComponent},
   {path : 'hobbies', component: HobbiesComponent},
   {path : 'contact', component: ContactComponent},
+  {path : 'recruiters', component: RecruitersComponent},
   {path: '', redirectTo :'home', pathMatch: 'full'},
   { path: 'projects', loadChildren: () => import('./projects/projects.module').then(m => m.ProjectsModule) },
 ];

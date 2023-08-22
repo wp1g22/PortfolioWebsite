@@ -13,6 +13,11 @@ import { EducationComponent } from './education/education.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { ContactComponent } from './contact/contact.component';
 import {MatDividerModule} from '@angular/material/divider';
+import { MatButtonModule } from '@angular/material/button';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RecruitersComponent } from './recruiters/recruiters.component';
+import {MatInputModule} from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -23,6 +28,7 @@ import {MatDividerModule} from '@angular/material/divider';
     HobbiesComponent,
     ContactComponent,
     
+    
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,12 @@ import {MatDividerModule} from '@angular/material/divider';
     ToolbarComponent,
     CommonModule,
     ScrollArrowComponent,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonModule,
+    HttpClientModule,
+    MatInputModule,
+    MatIconModule,
+    RecruitersComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
