@@ -1,0 +1,153 @@
+@media (max-width: 800px) {
+    .title {
+        font: "Lucida Console";
+        font-size: 10.5vh;
+        /* text-align: center; */
+        padding-top: 17vh;
+        padding-bottom:0vh;
+        color: #ADEFD1FF;
+        line-height: 105%;
+        /* z-index: 10; */
+        /* left:0; */
+         /* right:25vw; */
+         left:2vw;
+         right:0;
+         text-align: center;
+         position: absolute;
+         width : 96%;
+         /* z-index: 0; */
+        /* width : 90%; */
+
+    }
+    .subtitle{
+        color: #ADEFD1FF;
+        padding-top: 50vh;
+        padding-bottom: 10vh;
+        font-size: 7vw;
+        line-height: 110%;
+        padding-left: 0vw;
+        padding-right: 0vw;
+        left:2vw;
+         right:0;
+         text-align: center;
+         position: absolute;
+         width : 96%;
+         overflow: hidden;
+        /* z-index: 0; */
+      }
+      .scroll-arrow{
+        padding-top: 70vh;
+        padding-bottom: 40vh;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(9%);
+        transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+        overflow: hidden;
+      }
+      .example-form-field {
+        width: 50vw;
+        padding-top: 4vh;
+        padding-bottom: 4vh;
+      }
+      .text{
+        color: #ADEFD1FF;
+        width: 85vw;
+        padding-bottom: 0vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 2.5vh;
+        line-height: 110%;
+
+      }
+      .pad {
+        padding-top: 50vh;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 3vh;
+      }
+  }
+  
+  @media (min-width: 800px) {
+    .title {
+        font: "Lucida Console";
+        font-size: 14vw;
+        /* text-align: center; */
+        padding-top: 30vh;
+        padding-bottom:15vh;
+        color: #ADEFD1FF;
+        /* z-index: 10; */
+        /* left:0; */
+      /* right:25vw; */
+      text-align: center;
+      /* width : 90%; */
+    }
+    .subtitle{
+        color: #ADEFD1FF;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        font-size: 3vw;
+        line-height: 110%;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        left:16vw;
+        right:0;
+        text-align: center;
+        position: absolute;
+        width : 60%;
+        z-index: 0;
+        overflow: hidden;
+      }
+      .scroll-arrow{
+        padding-top: 35vh;
+        padding-bottom: 30vh;
+      }
+      .fade-in {
+        opacity: 0;
+        transform: translateY(15%);
+        transition: opacity 1.7s ease-out, transform 1.7s ease-out;
+        overflow: hidden;
+      }
+      .example-form-field {
+        width: 25vw;
+      }
+      .text{
+        color: #ADEFD1FF;
+        width: 30vw;
+        /* padding-bottom: 60vh; */
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 4vh;
+        line-height: 110%;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+        padding-bottom: 21vh;
+      }
+  }
+
+
+.boxes {
+  overflow: hidden;
+}
+
+
+
+
+.delay{
+  transition-delay:1.5s;
+}
+
+.active {
+  opacity: 4;
+  transform: translateY(0);
+}

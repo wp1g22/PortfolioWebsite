@@ -1,0 +1,26 @@
+<div>
+    <h1 class="title">{{message}}</h1>
+  </div>
+<div class="flex-container">
+    
+    <div class="boxes">
+        <h1 class="fade-in text pad" style="transition-delay: 0s;">
+            This is the recruiters section of my website. A personalised recruiter code is attatched to every CV I send out for you to enter here!
+       </h1>
+      </div>
+    <div>
+        <mat-form-field class="example-form-field fade-in"  style="transition-delay: 0.5s;">
+            <mat-label style="color: white;">Recruiter code</mat-label>
+            <input matInput type="text" [(ngModel)]="value">
+            <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+              <mat-icon style="color: white;">close</mat-icon>
+            </button>
+     </mat-form-field>
+    </div>
+   
+      <div class="boxes">
+        <h1 class="fade-in text"  style="transition-delay: 1s;">
+            If you are unable to access your recruiter code please contact me <a href="https://personal.southampton.ac.uk/wp1g22/#/contact" style="color: inherit;">here</a> from your company email and I will gladly send yours through!
+       </h1>
+      </div>
+</div>
